@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base;
+@tailwind components; */
+
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
@@ -49,11 +49,11 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
 
   body {
-    @apply bg-background text-foreground font-inter;
+
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
@@ -96,11 +96,16 @@
 
 /* Gradient text */
 .gradient-text {
-  @apply bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent;
+  background: linear-gradient(to right, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Glassmorphism effect */
 .glass {
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);

@@ -71,8 +71,8 @@ const About = () => {
             <div className="relative z-10">
               <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-pink-500 p-1">
                 <div className="w-full h-full rounded-full bg-slate-800 overflow-hidden flex items-center justify-center">
-                  <img
-                    src="assets/profile.jpeg"
+                  <img 
+                    src="profile.jpeg"
                     alt="Avinash Kumar Mahato"
                     className="w-full h-full object-cover object-center"
                   />
